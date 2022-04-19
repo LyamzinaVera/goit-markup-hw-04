@@ -8,6 +8,7 @@
    --accent-text-color: #188ce8;
    --line-color: #ECECEC;
    --line-color-second: #EEEEEE;
+   --border-line: #AFB1B8;
 }
 
 
@@ -184,9 +185,7 @@ margin-right: 0;
    padding-top: 94px;
    padding-bottom: 94px;
 }
-.job {
-    padding: 0;
-}
+
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -212,7 +211,21 @@ margin-right: 0;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    
 }
+.title-list {
+    
+    margin-right: 30px;
+   
+    }
+.icon-list {
+   
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-color-alternativ);
+    border-radius: 4px;
+    }
 .title {  
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -265,32 +278,7 @@ img {
     line-height: 1.2;
     text-align: center;
 }
-.title-list {
-    margin-right: 30px;
-    width: 270px;
-    }
-.title-list::before {
-   display: block;
-   content: "";
-   height: 120px;
-   margin-bottom: 30px;
-   background-color: var(--background-color-alternativ);
-   border-radius: 4px;
-   background-repeat: no-repeat;
-   background-position: center;
-}
-.icon-details::before {
-    background-image: url(../img/спутник.svg);
-}
-.icon-punctuality::before {
-    background-image: url(../img/clock.svg);
-}    
-.icon-plan::before {
-    background-image: url(../img/планирование.svg);
-}
-.icon-tecnologis::before {
-    background-image: url(../img/astronaut.svg);
-}
+
 
 .features .title-list:last-child{
     margin-right: 0;
@@ -331,6 +319,11 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
    
+}
+.photo-class:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .photo-class:nth-child(3n) {
     margin-right: 0;
@@ -406,9 +399,39 @@ img {
 .button.secondery:hover {
 color: var(--primary-white-color);
 background-color: var(--accent-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* Client */
+.client-set{
+    display: flex;
+    
+}
+.client {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-line);
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.client:hover {
+   border: 1px solid var(--accent-color);
 }
 
-/* Footer */
+.client:last-child {
+    margin-right: 0;
+}
+.client-icon {
+   margin: 16px 32px;
+   fill: currentColor;
+   }
+
+.client-icon:hover {
+    fill: currentColor;
+}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -449,34 +472,65 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 .social {
-    display: inline-block;
     display: flex;
+    margin: 0;
+    padding: 0;
+    }
+.social .insta {
+   display: block;
+   margin-right: 10px;
+   width: 44px;
+   height: 44px;
+   padding: 0;
+   border: none;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   background-image: url(../img/instagram.svg);
+   background-position: center;
+   background-repeat: no-repeat;
 }
-.social::before {
+.social .twiter {
     display: block;
-    content: "";
+    margin-right: 10px;
     width: 44px;
     height: 44px;
+    padding: 0;
+    border: none;
     background: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 50%;
+    background-image: url(../img/twiter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.insta::before{
-    background-image: url(../img/instagram.svg);
-    background-size: 20px 20px;
+.social .facebook {
+    display: block;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-image: url(../img/facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.twiter::before{
-    background-image: url(../img/twiter_white.svg>);
-    background-size: 20px 20px;
+.social .linkedin {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-image: url(../img/linkedin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* цвет основного текста  #212121*/
-
-/* вторичный цвет текста  #757575*/
-
-/* белый #FFFFFF */
-
-/* акцент #2196F3 */
-
-/* цвет футера #rgba(255, 255, 255, 0.6); */
+.facebook:hover,
+.twiter:hover,
+.insta:hover,
+.linkedin:hover
+ { background-color: var(--accent-color);
+}
