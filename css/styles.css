@@ -429,29 +429,35 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 /* prof */
 .prof {
     display: flex;
-   
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    color: var(--primary-white-color);
+    fill: var(--border-line);
+    justify-content: center;
+    align-items: center;
+    
+}
+.prof:hover{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: var(--primary-white-color)
 }
 .team-prof {
     display: flex;
-    margin-bottom: 30px;
-    /* justify-content: center;
-    align-items: center; */
+    margin-top: 16px;
+    justify-content: center;
+}
+.prof-link:last-child {
+    margin-right: 0;
 }
 .prof-link {
-   margin-right: 10px;
+ margin-right: 10px;
 }
-.prof-link:hover{
+/* .prof-link:hover{
   fill: var(--accent-color);  
-}
+} */
 
-.prof-icon {
-     /* width: 44px;
-    height: 44px; */
-    justify-content: center;
-    text-align: center;
-    fill: var(--border-line);
-   
-}
 
 /* Client */
 .client-set{
@@ -533,17 +539,21 @@ color: var(--accent-color);
     }
 
 .insta {
+    
+    display: block;
     margin-right: 10px;
+    justify-content: center;
+    text-align: center;
 }
+   
 
 .insta-item {
- display: block;
+ 
  width: 44px;
  height: 44px;
  background: rgba(255, 255, 255, 0.1);
  border-radius: 50%;
- justify-content: center;
- text-align: center;
+
  fill: var(--primary-white-color)
 }
 
