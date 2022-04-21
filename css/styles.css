@@ -105,10 +105,8 @@ ul {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin: 0;
     color: var(--primary-text-color);
     align-items: center;
-    font-style: normal;
     text-decoration: none;  
     fill: var(--primary-text-color);
 }
@@ -117,10 +115,8 @@ ul {
     fill: var(--accent-color);
 }
 .item-icon {
-    display: block;
-    margin-right: 10px;
-    
-   
+   margin-right: 10px;
+ 
 }
 
 .site-nav {
@@ -448,16 +444,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     margin-top: 16px;
     justify-content: center;
 }
-.prof-link:last-child {
-    margin-right: 0;
-}
-.prof-link {
- margin-right: 10px;
-}
-/* .prof-link:hover{
-  fill: var(--accent-color);  
-} */
 
+.special-icon {
+    margin-right: 10px;
+}
 
 /* Client */
 .client-set{
@@ -465,9 +455,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     justify-content: center;
    }
 .client {
-    display: flex;
     margin-right: 30px;
-    
 }
 .client-icon {
     width: 106px;
@@ -477,9 +465,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 
 
 .client-item {
-    width: 170px;
-    height: 92px;
+    /* width: 170px;
+    height: 92px; */
+    display: block;
+    object-position: center;
     padding: 16px 32px;
+    box-sizing: border-box;
     border: 1px solid var(--border-line);
     border-radius: 4px;
     fill: var(--border-line);
@@ -527,7 +518,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 color: var(--accent-color);
 }
 .logo-address-mail {
-    color: var(--primary-white-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     font-style: normal;
 }
@@ -539,25 +530,20 @@ color: var(--accent-color);
     }
 
 .insta {
-    
-    display: block;
     margin-right: 10px;
+}
+.twit {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-}
-   
-
-.insta-item {
- 
- width: 44px;
- height: 44px;
- background: rgba(255, 255, 255, 0.1);
- border-radius: 50%;
-
- fill: var(--primary-white-color)
+    fill: var(--primary-white-color)
 }
 
-.insta-item:hover{
+.twit:hover{
     background-color: var(--accent-color);
    
 }
