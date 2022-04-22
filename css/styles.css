@@ -21,8 +21,8 @@ font-size: 14px;
 letter-spacing: 0.03em;
 }
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1600px;
+    margin: 0 auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -96,7 +96,8 @@ ul {
 .auth-nav .item + .item{
     margin-left: 50px;
     }
-.auth-nav:hover {
+.auth-nav:hover,
+.auth-nav:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -110,7 +111,8 @@ ul {
     text-decoration: none;  
     fill: var(--primary-text-color);
 }
-.auth-nav-mail:hover {
+.auth-nav-mail:hover,
+.auth-nav-mail:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -333,13 +335,18 @@ img {
     flex-wrap: wrap;
        
 }
+.photo {
+    display: block;
+    text-decoration: none;
+}
 .photo-class {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
    
 }
-.photo-class:hover {
+.photo:hover,
+.photo:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 0px 4px 4px rgba(0, 0, 0, 0.06),
 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -371,10 +378,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     font-size: 16px;
     line-height: 1.88;
     }
-    .photo {
-        text-decoration: none;
-        font-style: normal;
-    }
+
   
 /* button */
 .button {
@@ -434,7 +438,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     align-items: center;
     
 }
-.prof:hover{
+.prof:hover,
+.prof:focus{
     background-color: var(--accent-color);
     border-radius: 50%;
     fill: var(--primary-white-color)
@@ -476,7 +481,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     fill: var(--border-line);
    
 }
-.client-item:hover {
+.client-item:hover,
+.client-item:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 
@@ -494,9 +500,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 }
 .web {
     display: flex;
+    align-items: baseline;
 }
 .social-web {
-    margin-left: 156px;
+    margin-left: 70px;
 }
 .adress {
    margin-top: 20px;
@@ -514,7 +521,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     text-decoration: none;
     font-style: normal;
 }
-.logo-address:hover{
+.logo-address:hover,
+.logo-address:focus{
 color: var(--accent-color);
 }
 .logo-address-mail {
@@ -522,7 +530,8 @@ color: var(--accent-color);
     text-decoration: none;
     font-style: normal;
 }
-.logo-address-mail:hover {
+.logo-address-mail:hover,
+.logo-address-mail:focus {
     color: var(--accent-color);
 }
 .social {
